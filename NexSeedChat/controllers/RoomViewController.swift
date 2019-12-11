@@ -137,9 +137,16 @@ extension RoomViewController: UITableViewDelegate, UITableViewDataSource{
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        performSegue(withIdentifier: "toRoom", sender: nil)
+        performSegue(withIdentifier: "toRoom", sender: room.documentId)
         
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "toRoom"{
+            let chatVC = segue.destination as! ChatViewController
+            chatVC.documentId = sender as! String
+            
+        }
     }
     
     

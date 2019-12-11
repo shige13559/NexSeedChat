@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import MessageKit
+
+struct ChatUser: SenderType {
+    //ユーザーID
+    //FirebaseのAuthenticationのuidを使う
+    var senderId: String
+    
+    //表示名
+    var displayName: String
+    
+    //アイコン画像のURL
+    let photoUrl: String
+}
