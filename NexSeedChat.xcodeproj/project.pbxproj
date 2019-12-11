@@ -17,6 +17,9 @@
 		B5F923CE239F66EC00138F04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F923CD239F66EC00138F04 /* LoginViewController.swift */; };
 		B5F923D0239F744E00138F04 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F923CF239F744E00138F04 /* RoomViewController.swift */; };
 		B5F923D2239F775900138F04 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F923D1239F775900138F04 /* Room.swift */; };
+		B5F923D623A0BA8400138F04 /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F923D523A0BA8400138F04 /* ChatUser.swift */; };
+		B5F923D823A0BA9600138F04 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F923D723A0BA9600138F04 /* Message.swift */; };
+		B5F923DA23A0BAA400138F04 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F923D923A0BAA400138F04 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		B5F923CD239F66EC00138F04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B5F923CF239F744E00138F04 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		B5F923D1239F775900138F04 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		B5F923D523A0BA8400138F04 /* ChatUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
+		B5F923D723A0BA9600138F04 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B5F923D923A0BAA400138F04 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B87641039EBBFFBF9EADCC16 /* Pods-NexSeedChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexSeedChat.debug.xcconfig"; path = "Target Support Files/Pods-NexSeedChat/Pods-NexSeedChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +110,7 @@
 			children = (
 				B5F923CD239F66EC00138F04 /* LoginViewController.swift */,
 				B5F923CF239F744E00138F04 /* RoomViewController.swift */,
+				B5F923D923A0BAA400138F04 /* ChatViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -112,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				B5F923D1239F775900138F04 /* Room.swift */,
+				B5F923D523A0BA8400138F04 /* ChatUser.swift */,
+				B5F923D723A0BA9600138F04 /* Message.swift */,
 			);
 			path = objects;
 			sourceTree = "<group>";
@@ -250,11 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F923D623A0BA8400138F04 /* ChatUser.swift in Sources */,
 				B5F923CE239F66EC00138F04 /* LoginViewController.swift in Sources */,
+				B5F923DA23A0BAA400138F04 /* ChatViewController.swift in Sources */,
 				B5F923B3239E2A0200138F04 /* AppDelegate.swift in Sources */,
 				B5F923B5239E2A0200138F04 /* SceneDelegate.swift in Sources */,
 				B5F923D0239F744E00138F04 /* RoomViewController.swift in Sources */,
 				B5F923D2239F775900138F04 /* Room.swift in Sources */,
+				B5F923D823A0BA9600138F04 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
