@@ -34,6 +34,8 @@ class LoginViewController: UIViewController {
         //アニメーション開始
         splashView.startAnimation{
             //アニメ終了時の処理
+            //スプラッシュを表示したので、「true:表示したと設定」
+            didDisplaySplashFlg = true
         }
     }
 
