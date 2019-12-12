@@ -10,10 +10,15 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
+//スプラッシュを表示したかどうか判断するフラグ
+//true: 表示した、false:表示してない
+var didDisplaySplashFlg = false
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    var show = true
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

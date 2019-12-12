@@ -198,6 +198,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="ログアウト"/>
+                                <connections>
+                                    <action selector="didClickLogoutButton:" destination="7vU-cU-8yf" eventType="touchUpInside" id="8sn-RP-3Ov"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -208,6 +211,7 @@
                         <outlet property="emailLabel" destination="Imq-Vm-MvX" id="cER-ly-RQn"/>
                         <outlet property="imageView" destination="cN0-Kc-RQL" id="9nL-cn-GWb"/>
                         <outlet property="nameLabel" destination="pQA-Nq-yhM" id="z3W-nW-6UF"/>
+                        <segue destination="dg6-DE-SD9" kind="modal" identifier="toBack" modalPresentationStyle="fullScreen" id="VqX-Ia-Jbg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hH4-y7-eaj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

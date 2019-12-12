@@ -31,7 +31,13 @@ class RoomViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        showSplashView()
+        //スプラッシュを表示するかどうか判断
+        if didDisplaySplashFlg == false{
+            //まだスプラッシュを表示していなかったら
+            showSplashView()
+            
+            didDisplaySplashFlg = true
+        }
         
         let db = Firestore.firestore()
         
